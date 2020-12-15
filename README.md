@@ -1,1 +1,1 @@
-# collegeatlas
+# College Atlas
