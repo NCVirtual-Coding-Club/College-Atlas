@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="component_event" id="LLo*)*;PU,}IcRDXejN@" x="-121" y="-629">
+  <block type="component_event" id="LLo*)*;PU,}IcRDXejN@" x="-664" y="-860">
     <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
     <field name="COMPONENT_SELECTOR">Screen1</field>
     <comment pinned="false" h="80" w="160">When Screen1 is initialized, the program will switch the screen to Welcome_Screen. This ensures that the welcome screen is well pronounced by all developers.</comment>

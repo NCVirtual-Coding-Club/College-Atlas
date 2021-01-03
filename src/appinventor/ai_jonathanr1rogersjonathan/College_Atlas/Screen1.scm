@@ -1,4 +1,4 @@
 #|
 $JSON
-{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"208","Source":"Form","Properties":{"$Name":"Screen1","$Type":"Form","$Version":"27","ActionBar":"True","AppName":"College_Atlas","ScreenOrientation":"sensor","Theme":"AppTheme.Light.DarkActionBar","Title":"College Atlas","Uuid":"0"}}
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"208","Source":"Form","Properties":{"$Name":"Screen1","$Type":"Form","$Version":"27","ActionBar":"True","AppName":"College Atlas","CloseScreenAnimation":"fade","Icon":"logo.png","ScreenOrientation":"sensor","Theme":"AppTheme.Light.DarkActionBar","Title":"College Atlas","TitleVisible":"False","Uuid":"0","$Components":[{"$Name":"VerticalArrangement1","$Type":"VerticalArrangement","$Version":"3","AlignHorizontal":"3","AlignVertical":"2","Height":"-2","Width":"-2","Uuid":"923815411","$Components":[{"$Name":"Image1","$Type":"Image","$Version":"4","Height":"-1060","Width":"-1060","Picture":"logo.png","Uuid":"1870168185"}]}]}}
 |#
