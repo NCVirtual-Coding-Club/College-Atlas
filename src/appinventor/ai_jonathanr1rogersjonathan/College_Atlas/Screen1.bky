@@ -1,15 +1,290 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="component_event" id="LLo*)*;PU,}IcRDXejN@" x="-121" y="-629">
-    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
-    <field name="COMPONENT_SELECTOR">Screen1</field>
-    <comment pinned="false" h="80" w="160">When Screen1 is initialized, the program will switch the screen to Welcome_Screen. This ensures that the welcome screen is well pronounced by all developers.</comment>
+  <block type="component_event" id="UQvT[)fd+f{Gi4,=+E{=" x="-783" y="-696">
+    <mutation component_type="Button" is_generic="false" instance_name="btnGetStarted" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btnGetStarted</field>
     <statement name="DO">
-      <block type="controls_openAnotherScreen" id="_ITDYXys]$arMxF||!?*">
+      <block type="controls_openAnotherScreen" id="Ra3Nv2+wbPJ/Wx[()A1N">
         <value name="SCREEN">
-          <block type="text" id="!MV8,::c=L.b)SMEiwHZ">
-            <field name="TEXT">Welcome_Screen</field>
+          <block type="text" id="}iRp|W.W{_8@m%fk1hmW">
+            <field name="TEXT">Questionnaire_Screen</field>
           </block>
         </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id=")`YBMk93jsmYxcS_Ku3x" disabled="true" x="-480" y="-587">
+    <field name="NAME">backNumber</field>
+    <comment pinned="false" h="80" w="160">Variable for Easter egg</comment>
+    <value name="VALUE">
+      <block type="math_number" id=",aeX!Rn}E/bZrh/F3h~X">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="JOG]62;E.yu}AwMfh|,B" disabled="true" x="-708" y="-520">
+    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <comment pinned="false" h="80" w="160">Easter egg code</comment>
+    <statement name="DO">
+      <block type="lexical_variable_set" id=",y(!LkA~2IFQeC[?Ix/V">
+        <field name="VAR">global backNumber</field>
+        <value name="VALUE">
+          <block type="math_add" id="ha%h=[d[V5,lPh?1`Rh8">
+            <mutation items="2"></mutation>
+            <value name="NUM0">
+              <block type="lexical_variable_get" id="$gw:8:Lx=DYcW#b$7jdp">
+                <field name="VAR">global backNumber</field>
+              </block>
+            </value>
+            <value name="NUM1">
+              <block type="math_number" id="gg=cnRs?KZkldz-iMuvZ">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="T)1oFo7XzW5Zh9m*s4N=">
+            <mutation elseif="8" else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="Hwoxq#)Ei595c(Q}~)[8">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="BZ;8};t[:yi{{F?*OD,t">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="/%/-[=$sAIHK@^p4fg@e">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="Umnm:D:-bMheKfdK%beU">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id=")_AIOf)_GZ?S+yF/Q2g_">
+                    <field name="TEXT">Created by:</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="kK1_cho}te[6K;rhNj6/">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="}jBV`F#pKhtQp:yH~TSm">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id=":%+dkC}m[}/|2DiI@P[K">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="*C7|9k58PQ1z])dd0BQ;">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="Dg+9X#[*lj{BiNkADa5h">
+                    <field name="TEXT">Jonathan R.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF2">
+              <block type="logic_compare" id="[_7S{WrKD2l+{no6EQd,">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="MrP01(HS2syAfuxkZ=]H">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="6%=B._/R#~`Iq*z1GWzu">
+                    <field name="NUM">3</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO2">
+              <block type="component_method" id="H5A+O6J$Al#%hZ*Jt,5d">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="A0f?-PNk]o32s-#5yWB)">
+                    <field name="TEXT">Riley P.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF3">
+              <block type="logic_compare" id="F.h`EiqM{?/YNSbNU}^3">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="k8M*w5DBW%mKdS{?qWaO">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="Har*QdNOAW_B[LpCG^1a">
+                    <field name="NUM">4</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO3">
+              <block type="component_method" id="3}@$v1cer1W/B4jm=u)U">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="4}(Yn0Gu0hxdan5NE)rE">
+                    <field name="TEXT">Pranathi G.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF4">
+              <block type="logic_compare" id="(fvacj8OxJ+[+H#sn,P9">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="oI[Z7||gvz*8vb?^brWb">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="Fe.RZzPdrh7iP^3d+[{B">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO4">
+              <block type="component_method" id="T%z,{P|}7(%y6@FL[B5g">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="}aA:F4;0Wu2;#?-896.c">
+                    <field name="TEXT">Jamari G.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF5">
+              <block type="logic_compare" id="15WTV:t?[98!A}zzEc*Y">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="rkRUen`]Mp}0AneHx~/7">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="HX_[Pi!U/X3]LCB$tL(F">
+                    <field name="NUM">6</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO5">
+              <block type="component_method" id="wwKlO}UB`y$,%oR2+6i3">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="mH{_IZH!Y~Bnyk)c%2OL">
+                    <field name="TEXT">Nick L.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF6">
+              <block type="logic_compare" id="PEm#mEqQ^)YsQvxa(3X5">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="OC?Ju[+BQmV2BLDe2}{W">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="i3TEr(~0J2O{[mi6OpKX">
+                    <field name="NUM">7</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO6">
+              <block type="component_method" id="=qWa+pbrM~o}lIsdMpr5">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="1vr%)lp|=NjzLP^UdVk_">
+                    <field name="TEXT">App Development Managed by:</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF7">
+              <block type="logic_compare" id="zi*32[(RXnY9d}!OWG2X">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="R4dA3*khTODApU)ulEw+">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="^qJbFu/`0^B}4D9;$.HG">
+                    <field name="NUM">8</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO7">
+              <block type="component_method" id="QEIv,ri_vY?I;hY;tl@h">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="]l0V!aqo[%=-]#@;V;1K">
+                    <field name="TEXT">Ms. Hall</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF8">
+              <block type="logic_compare" id=":$9V@@ld55,J!z[]M)c8">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="d{0wW,=0{MOX0Yk-(Xb)">
+                    <field name="VAR">global backNumber</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="m(%RFN1gHB@$/_.Nuqk-">
+                    <field name="NUM">9</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO8">
+              <block type="component_method" id="aQeRH[#iUT{yCMYc)}Cb">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="notBackButton"></mutation>
+                <field name="COMPONENT_SELECTOR">notBackButton</field>
+                <value name="ARG0">
+                  <block type="text" id="OaSz`Fs0Jbif9CSd{I^X">
+                    <field name="TEXT">Thank You for using CollegeAtlas!</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_closeApplication" id="R^c9{fcU6xHh?,H[kzO6"></block>
+            </statement>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
